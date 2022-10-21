@@ -18,7 +18,9 @@ terraform.rc
 __pycache__/
 
 #RSA Keys
-*.pem
+main-key.pem
+usr-key.pem
+int-key.pem
 
 #Credentials
 id.txt

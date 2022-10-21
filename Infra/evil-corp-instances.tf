@@ -3,7 +3,7 @@ resource "aws_instance" "maq-bot0" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
-  key_name = "usr-key"
+  key_name = "bot-key"
 
   network_interface {
       device_index = 0
@@ -14,6 +14,18 @@ resource "aws_instance" "maq-bot0" {
     Name = "evil-corp-cost-0"
   }
 
+  user_data = <<-EOF
+              #!/bin/bash
+              sudo apt update -y
+              sudo apt install python3-pip
+              pip install paramiko
+              pip install icmplib
+              sudo apt-get install nmap -y
+              sudo apt-get install tcpdump -y
+              sudo apt-get install net-tools -y
+              sudo git clone https://github.com/engleovictor/Cybertyr_CR
+              EOF
+
 }
 
 resource "aws_instance" "maq-bot1" {
@@ -21,7 +33,7 @@ resource "aws_instance" "maq-bot1" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
-  key_name = "usr-key"
+  key_name = "bot-key"
 
   network_interface {
       device_index = 0
@@ -32,6 +44,18 @@ resource "aws_instance" "maq-bot1" {
     Name = "evil-corp-cost-1"
   }
 
+  user_data = <<-EOF
+              #!/bin/bash
+              sudo apt update -y
+              sudo apt install python3-pip
+              pip install paramiko
+              pip install icmplib
+              sudo apt-get install nmap -y
+              sudo apt-get install tcpdump -y
+              sudo apt-get install net-tools -y
+              sudo git clone https://github.com/engleovictor/Cybertyr_CR
+              EOF
+
 }
 
 resource "aws_instance" "maq-bot2" {
@@ -39,7 +63,7 @@ resource "aws_instance" "maq-bot2" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
-  key_name = "usr-key"
+  key_name = "bot-key"
 
   network_interface {
       device_index = 0
@@ -50,6 +74,18 @@ resource "aws_instance" "maq-bot2" {
     Name = "evil-corp-cost-2"
   }
 
+  user_data = <<-EOF
+              #!/bin/bash
+              sudo apt update -y
+              sudo apt install python3-pip
+              pip install paramiko
+              pip install icmplib
+              sudo apt-get install nmap -y
+              sudo apt-get install tcpdump -y
+              sudo apt-get install net-tools -y
+              sudo git clone https://github.com/engleovictor/Cybertyr_CR
+              EOF
+
 }
 
 resource "aws_instance" "maq-bot3" {
@@ -57,7 +93,7 @@ resource "aws_instance" "maq-bot3" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
-  key_name = "usr-key"
+  key_name = "bot-key"
 
   network_interface {
       device_index = 0
@@ -67,6 +103,18 @@ resource "aws_instance" "maq-bot3" {
   tags = {
     Name = "evil-corp-cost-3"
   }
+
+  user_data = <<-EOF
+              #!/bin/bash
+              sudo apt update -y
+              sudo apt install python3-pip
+              pip install paramiko
+              pip install icmplib
+              sudo apt-get install nmap -y
+              sudo apt-get install tcpdump -y
+              sudo apt-get install net-tools -y
+              sudo git clone https://github.com/engleovictor/Cybertyr_CR
+              EOF
 
 }
 
@@ -90,9 +138,13 @@ resource "aws_instance" "maq-usr" {
   user_data = <<-EOF
               #!/bin/bash
               sudo apt update -y
+              sudo apt install python3-pip
+              pip install paramiko
+              pip install icmplib
               sudo apt-get install nmap -y
               sudo apt-get install tcpdump -y
               sudo apt-get install net-tools -y
+              sudo git clone https://github.com/engleovictor/Cybertyr_CR
               EOF
 
 
@@ -113,5 +165,17 @@ resource "aws_instance" "maq-int" {
   tags = {
     Name = "Maq-Int"
   }
+
+    user_data = <<-EOF
+              #!/bin/bash
+              sudo apt update -y
+              sudo apt install python3-pip
+              pip install paramiko
+              pip install icmplib
+              sudo apt-get install nmap -y
+              sudo apt-get install tcpdump -y
+              sudo apt-get install net-tools -y
+              sudo git clone https://github.com/engleovictor/Cybertyr_CR
+              EOF
 
 }
