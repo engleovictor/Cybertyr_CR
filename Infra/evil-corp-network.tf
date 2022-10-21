@@ -94,22 +94,22 @@ resource "aws_route_table_association" "ev-rt-association" {
    security_groups = [aws_security_group.my-all.id]
  }
 
-#  resource "aws_eip" "usr-eip" {
-#    vpc                       = true
-#    network_interface         = aws_network_interface.usr-ni.id
-#    associate_with_private_ip = "192.168.1.171"
-#    depends_on = [
-#      aws_internet_gateway.evil-corp-gateway
-#    ]
-#  }
+ resource "aws_eip" "usr-eip" {
+   vpc                       = true
+   network_interface         = aws_network_interface.usr-ni.id
+   associate_with_private_ip = "192.168.1.171"
+   depends_on = [
+     aws_internet_gateway.evil-corp-gateway
+   ]
+ }
 
-#    resource "aws_eip" "int-eip" {
-#      vpc                       = true
-#      network_interface         = aws_network_interface.int-ni.id
-#      associate_with_private_ip = "192.168.1.203"
-#      depends_on = [
-#        aws_internet_gateway.evil-corp-gateway
-#      ]
-#    }
+   resource "aws_eip" "int-eip" {
+     vpc                       = true
+     network_interface         = aws_network_interface.int-ni.id
+     associate_with_private_ip = "192.168.1.203"
+     depends_on = [
+       aws_internet_gateway.evil-corp-gateway
+     ]
+   }
 
 ###############################
