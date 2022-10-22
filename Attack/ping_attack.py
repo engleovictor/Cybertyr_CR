@@ -7,5 +7,3 @@ while True:
     ping(robots_ip[i],count=3,interval=0.5,privileged=False)
     i+=1
     i%=5
-
-# tcpdump -ni <network-interface>  proto \\icmp : )

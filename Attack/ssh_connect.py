@@ -11,11 +11,11 @@ full_name = "/Cybertyr_CR/Attack"
 robots_ip   = ["192.168.1.15","192.168.1.42","192.168.1.102","192.168.1.147","192.168.1.171"]
 
 #RSA Filenames
-intkey = "/Cybertyr_CR/int-key.pem"
+intkey = "int-key.pem"
 botkey = "/Cybertyr_CR/bot-key.pem"
 usrkey = "/Cybertyr_CR/usr-key.pem"
 
-def connect_exec(ip,cmd):
+def connect_exec(ip,tm,cmd):
     if not ip in robots_ip:
         kfn = intkey
     elif ip == robots_ip[4]:
@@ -26,5 +26,5 @@ def connect_exec(ip,cmd):
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     client.connect(ip,port=22,username="ubuntu",key_filename=kfn,password="")
     stdin, stdout, stderr = client.exec_command(cmd)
-    time.sleep(5)
+    time.sleep(tm)
     client.close()
