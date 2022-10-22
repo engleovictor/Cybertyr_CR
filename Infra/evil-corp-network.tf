@@ -99,7 +99,9 @@ resource "aws_route_table_association" "ev-rt-association" {
    network_interface         = aws_network_interface.usr-ni.id
    associate_with_private_ip = "192.168.1.171"
    depends_on = [
-     aws_internet_gateway.evil-corp-gateway
+       aws_internet_gateway.evil-corp-gateway,
+       aws_instance.maq-usr,
+       aws_network_interface.usr-ni
    ]
  }
 
@@ -108,7 +110,9 @@ resource "aws_route_table_association" "ev-rt-association" {
      network_interface         = aws_network_interface.int-ni.id
      associate_with_private_ip = "192.168.1.203"
      depends_on = [
-       aws_internet_gateway.evil-corp-gateway
+       aws_internet_gateway.evil-corp-gateway,
+       aws_instance.maq-int,
+       aws_network_interface.int-ni
      ]
    }
 

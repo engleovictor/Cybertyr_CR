@@ -76,7 +76,10 @@ resource "aws_eip" "web-eip" {
   associate_with_private_ip = "10.0.1.50"
 
   depends_on = [
-    aws_internet_gateway.web-gateway
+    aws_internet_gateway.web-gateway,
+    aws_instance.maq-webpage,
+    aws_network_interface.web-ni
   ]
 }
+
 ###############################
