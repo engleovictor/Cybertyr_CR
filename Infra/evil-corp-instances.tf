@@ -1,5 +1,5 @@
 resource "aws_instance" "maq-bot0" {
-  ami = "ami-04f40724f70aa70cb" #This is a private ami, ubuntu-pip. pip is already installed 
+  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -16,17 +16,13 @@ resource "aws_instance" "maq-bot0" {
 
   user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt-get install nmap -y
-              sudo apt-get install tcpdump -y
-              sudo apt-get install net-tools -y
-              git clone https://github.com/engleovictor/Cybertyr_CR
+              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
               EOF
 
 }
 
 resource "aws_instance" "maq-bot1" {
-  ami = "ami-04f40724f70aa70cb" #This is a private ami, ubuntu-pip. pip is already installed 
+  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -43,17 +39,13 @@ resource "aws_instance" "maq-bot1" {
 
   user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt-get install nmap -y
-              sudo apt-get install tcpdump -y
-              sudo apt-get install net-tools -y
-              git clone https://github.com/engleovictor/Cybertyr_CR
+              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
               EOF
 
 }
 
 resource "aws_instance" "maq-bot2" {
-  ami = "ami-04f40724f70aa70cb" #This is a private ami, ubuntu-pip. pip is already installed 
+  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -70,17 +62,13 @@ resource "aws_instance" "maq-bot2" {
 
   user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt-get install nmap -y
-              sudo apt-get install tcpdump -y
-              sudo apt-get install net-tools -y
-              git clone https://github.com/engleovictor/Cybertyr_CR
+              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
               EOF
 
 }
 
 resource "aws_instance" "maq-bot3" {
-  ami = "ami-04f40724f70aa70cb" #This is a private ami, ubuntu-pip. pip is already installed 
+  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -97,18 +85,14 @@ resource "aws_instance" "maq-bot3" {
 
   user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt-get install nmap -y
-              sudo apt-get install tcpdump -y
-              sudo apt-get install net-tools -y
-              git clone https://github.com/engleovictor/Cybertyr_CR
+              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
               EOF
 
 }
 
 
 resource "aws_instance" "maq-usr" {
-  ami = "ami-04f40724f70aa70cb" #This is a private ami, ubuntu-pip. pip is already installed 
+  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -125,17 +109,13 @@ resource "aws_instance" "maq-usr" {
 
   user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt-get install nmap -y
-              sudo apt-get install tcpdump -y
-              sudo apt-get install net-tools -y
-              git clone https://github.com/engleovictor/Cybertyr_CR
+              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
               EOF
 
 }
 
 resource "aws_instance" "maq-int" {
-  ami = "ami-04f40724f70aa70cb" #This is a private ami, ubuntu-pip. pip is already installed 
+  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -152,11 +132,7 @@ resource "aws_instance" "maq-int" {
 
     user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt-get install nmap -y
-              sudo apt-get install tcpdump -y
-              sudo apt-get install net-tools -y
-              git clone https://github.com/engleovictor/Cybertyr_CR
+              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
               EOF
 
 }
