@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+*{
+    font-family: 'Arvo', serif;
+}
+
+body{
+    background: linear-gradient(296.82deg, #0F7E27 0.1%, #FFFFFF 100%);
+    width: 100%;
+	height: 100%;
+}
+
+.login{
+    
+    position:absolute;
+    width: 21.65em;
+    height: 26.94em;
+    left: 50%;
+    margin-top: 26em;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 34px;
+    transform: translate(-50%, -50%);
+}
+
+.usuario{
+    position: relative;
+    padding: 11px 19px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 50%;
+    margin-top: 4%;
+    transform: translate(-50%, -50%);
+    border:none;
+    outline:none;
+
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.senha{
+    position: relative;
+    padding: 11px 19px;
+    margin-left: 50%;
+    margin-top: 9.5%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+
+
+
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+input:read-write{
+    color:black
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+}
+a:hover{
+    color:darkgrey ;
+    transition: 0.2s;
+}
+.cadastrar{
+    position: absolute;
+    left: 11%;
+    top: 87%;
+    font-size: 14px;
+}
+
+
+.entrar{
+    position: relative;
+    width: 285px;
+    height: 48px;
+    margin-left: 50%;
+    margin-top: 11%;
+    transform: translate(-50%,-50%);
+    background: #107927;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+
+
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.entrar:hover{
+    cursor:pointer;
+    background-color: #094817;
+    transition: 0.4s
+}
+
+.entrar:active{
+    background-color: darkgray;
+}
+
+.login_txt{
+    position: relative;
+    margin-left: 11%;
+    margin-top: 10%;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2em;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.logo_imagem{
+    position:absolute;
+    height: 14.5rem;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-80%);
+}
+
+

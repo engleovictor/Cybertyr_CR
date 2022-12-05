@@ -1,0 +1,257 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+*{
+    font-family: 'Arvo', serif;
+} */
+
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/arvo/v20/tDbD2oWUg0MKqScQ7Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+#firstpage{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(296.82deg, #0F7E27 0.1%, #FFFFFF 100%);
+}
+
+
+.botao{
+    background: #000000;
+    border-radius: 20px;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: none;
+    color: #FFFFFF;
+}
+
+.botao:hover {
+    background-color: #0F7E27;
+    transition: 0.2s;
+    color: black;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+
+.logotipo{
+    position: relative;
+    width: 400px;
+}
+
+.leo{
+    margin-top: 80px;
+}
+
+/*COMEÇO DO TEXTO */
+
+
+.isac{
+    width: 100%;
+    background: linear-gradient(296.82deg, #0F7E27 0.1%, #FFFFFF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.barra{
+    position: sticky;
+    top: 0;
+}
+
+.barranav{
+    display: flex;
+    text-decoration: none;
+    background-color: black;
+    height: 12%;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arvo';
+}
+
+.logopequena{
+    position: relative;
+    height: 80px;
+    /* padding: 20px; */
+    /* background: linear-gradient(270deg, #000000 50%, #FFFFFF 100%); */
+    /* background: radial-gradient(#FFFFFF -500%, #000000 100%); */
+}
+
+.barranav ul{
+    list-style: none;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-evenly;    
+    width: 100%;
+}
+
+.barranav li {
+    display: inline;
+    /* background: radial-gradient(#0F7E27 -300%, #000000 100%); */
+    padding: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.sair:hover{
+    color: #0F7E27;
+    text-decoration: none;
+}
+
+.sair:active {
+    color: darkgray;
+    text-decoration:none;
+    background-color: #0F7E27;
+}
+#jean{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#jean1{
+    margin-top: 10%;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10%;
+}
+
+#jean2{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 150px;
+}
+
+.oto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+    width: 40%;
+}
+
+.oto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 10%;
+    width: 40%;
+}
+
+.fotodatropa{
+    /* position: absolute; */
+    height: 30%;
+    min-height: 300px;
+    min-width: 240px;
+    margin-left: 25%;
+}
+
+.fotoboa{
+    /* position: absolute; */
+    width: 40%;
+    min-height: 300px;
+    min-width: 240px;
+    margin-left: 15%;
+}
+
+h1{
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;   
+}
+
+h2{
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.textos{
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#jean3{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kudo{
+    margin-top: 80px;
+    margin-left: 10%;
+    width: 40%;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.cipriano{
+    margin-top: 80px;
+    margin-right: 10%;
+    width: 40%;
+}
+
+.simbolo{
+    position: relative;
+    width: 20px;
+}
+
+
+.jean4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotofinal{
+    width: 30%;
+    margin-bottom: 2%;
+}
+.textwithicon{
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    height: 60px;
+}

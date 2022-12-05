@@ -1,0 +1,364 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/arvo/v20/tDbD2oWUg0MKqScQ7Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.isac{
+    width: 100%;
+    /* height: 100%; */
+    background: linear-gradient(296.82deg, #0F7E27 0.1%, #FFFFFF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.barra{
+    position: sticky;
+    top: 0;
+}
+
+.barranav{
+    display: flex;
+    text-decoration: none;
+    background-color: black;
+    height: 12%;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arvo';
+}
+
+.logopequena{
+    position: relative;
+    height: 80px;
+    /* padding: 20px; */
+}
+
+.barranav ul{
+    list-style: none;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-evenly;    
+    width: 100%;
+}
+
+.barranav li {
+    display: inline;
+    padding: 20px;
+}
+
+
+
+.links{
+    margin-bottom: 60px;
+}
+
+.linkazul{
+    color: blue;
+}
+
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.firstpage{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+
+.textosfirstpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    width: 50%;
+    padding: 5px;
+}
+
+
+
+.botaodochat{
+    background: #000000;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    width: 250px;
+    height: 40px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: none;
+    color: #FFFFFF;
+}
+
+.chat{
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+}
+
+.bolinhas{
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.bolinhaverde{
+    width: 20px;
+    height: 20px;
+    background-color: #0F7E27;
+    border-radius: 10px;
+}
+
+.linhadecima{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logogrande{
+    width: 150px;
+}
+
+.divtraço{
+    height: 20px;
+    width: 12%;
+}
+
+.divtraçopequeno{
+    height: 20px;
+    width: 3%;
+}
+
+.traço{
+    background-color: black;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.traçosemcor{
+    height: 2px;
+    margin-top: 10px;
+}
+
+
+/* .linhadecima ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.linhadecima li {
+    display: inline;
+    padding: 10px; */
+/* } */
+
+.inputs{
+    background: #ffffff;
+    border-radius: 15px;
+    padding:2px;
+    position: relative;
+    width: 270px;
+    height: 30px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 20px;
+    line-height: none;
+    color: #000000;
+    margin: 5px;
+}
+
+.espaços{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.espaços2{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+/*JOhanneS*/
+header{
+    position:absolute;
+    left:50%;
+    transform: translate(-50%,0%);
+    margin-top:0;
+    display: flex;
+    text-decoration: none;
+    background-color: black;
+    height: 5.65em;
+    width: 100%;
+    color: white;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    font-family: 'Arvo';
+}
+
+
+
+.logopequena{
+    position:absolute;
+    margin-left:auto;
+    height: 90%;
+}
+
+
+.imagem_bola{
+    width:90%;
+    height:190px;
+    margin-top:1%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.marcador{
+    height:20px;
+    width:100%;
+    margin-top:85px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.linhas{
+    width: calc(16.67% - 20px);
+    margin-left:0;
+    height:2px;
+    background:#000000;
+    margin-top:9px;
+}
+
+.linha_p{
+    width: calc(8.33% - 10px);
+    margin-left:0;
+    height:2px;
+    background:#000000;
+    margin-top:9px;
+}
+
+.bolinhas{
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+.bolinha_verde{
+    width: 20px;
+    height: 20px;
+    background-color: #0F7E27;
+    border-radius: 10px;
+}
+
+main{
+    position:fixed;  
+    top:5.65em;
+    width: 100%;
+    height: calc(100% - 5.65em);
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background: linear-gradient(296.82deg, #0F7E27 0.1%, #FFFFFF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.sair:hover{
+    color: #0F7E27;
+    text-decoration: none;
+}
+
+.sair:active {
+    color: darkgray;
+    text-decoration:none;
+    background-color: #0F7E27;
+}
+
+.botao{
+    background: #000000;
+    border-radius: 20px;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: none;
+    color: #FFFFFF;
+}
+.botao:hover {
+    background-color: #0F7E27;
+    transition: 0.2s;
+    color: black;
+    cursor:pointer;
+    text-decoration:none;
+}
+.resposta{
+    width:14em;
+    padding: 0.6em;
+    background: #FFFFFF;
+    border-radius: 0.6em;
+    border:none;
+    outline:none;
+    font-size:18px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top:4px;
+}
+
+.respostas{
+    width:14em;
+    padding: 0.6em;
+    background: #FFFFFF;
+    border-radius: 0.6em;
+    border:none;
+    outline:none;
+    font-size:21px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+input:read-write{
+    color:black
+}

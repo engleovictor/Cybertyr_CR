@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    margin:0.1px;
+    
+}
+
+body{
+    background: linear-gradient(296.82deg, #0F7E27 0.1%, #FFFFFF 100%);
+    width: 100%;
+	height: 100%;
+}
+
+form{
+    position:absolute;
+    width: 21.65em;
+    height: 30em;
+    margin-top: 26em;
+    border-radius: 34px;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    background: rgba(0, 0, 0, 0.9);
+
+}
+input:read-write{
+    color:black
+}
+
+.dados{
+    width:80%;
+    padding: 0.6em;
+    background: #FFFFFF;
+    border-radius: 0.6em;
+    border:none;
+    outline:none;
+    font-size:1.1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.cadastrar{
+
+    width:80%;
+    padding: 0.35em;
+    background: #107927;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+
+    font-size: 1.8em;
+    color: #FFFFFF;
+}
+
+.cadastrar:hover{
+    cursor:pointer;
+    background-color: #094817;
+    transition: 0.4s
+}
+
+.cadastar:active{
+    background-color: darkgray;
+}
+
+.cadastro-txt{
+    margin-top:6%;
+    font-weight: 400;
+    font-size: 2.9em;
+
+    color: #FFFFFF;
+}
+a{
+    margin-bottom: 6%;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.85);
+
+}
+a:hover{
+    color:darkgrey ;
+    transition: 0.2s;
+}
+
+
+.logo{
+    position:absolute;
+    height: 14.5rem;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-80%);
+}

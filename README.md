@@ -30,9 +30,11 @@ Um Cyber Range que usa AWS.
 
     Por fim, deve instalar o [Nmap](https://nmap.org/)
 
+                    $ sudo apt install nmap
+
     Depois disso, deve-se criar um imagem a partir dessa instância criada.
 
-5. Para inciar a infraestrutura, o usuário deve dar terraform apply no diretório [Infra](./Infra). Agora o Cyber Range está funcionando.
+5. Para inciar a infraestrutura, o usuário deve dar terraform apply no diretório [Infra](./Infra/). Agora o Cyber Range está funcionando.
 
 Exemplo de ataque:
 
@@ -43,3 +45,5 @@ Na máquina local:
 Como o aluno acessa a máquina:
 
             $ ssh -i "usr-key.pem" ubuntu@<ip-publico da maq do instruendo>
+
+O usuário pode ter acesso a um exemplo de Páginas Web no Diretório [Pages](./Pages/).
