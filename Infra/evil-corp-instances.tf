@@ -1,5 +1,5 @@
 resource "aws_instance" "maq-bot0" {
-  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
+  ami = "ami-0538c589dcf4584c7" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -22,7 +22,7 @@ resource "aws_instance" "maq-bot0" {
 }
 
 resource "aws_instance" "maq-bot1" {
-  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
+  ami = "ami-0538c589dcf4584c7" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -45,7 +45,7 @@ resource "aws_instance" "maq-bot1" {
 }
 
 resource "aws_instance" "maq-bot2" {
-  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
+  ami = "ami-0538c589dcf4584c7" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -68,7 +68,7 @@ resource "aws_instance" "maq-bot2" {
 }
 
 resource "aws_instance" "maq-bot3" {
-  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
+  ami = "ami-0538c589dcf4584c7" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -92,7 +92,7 @@ resource "aws_instance" "maq-bot3" {
 
 
 resource "aws_instance" "maq-usr" {
-  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
+  ami = "ami-0538c589dcf4584c7" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
@@ -115,7 +115,7 @@ resource "aws_instance" "maq-usr" {
 }
 
 resource "aws_instance" "maq-int" {
-  ami = "ami-0fd0fbd656d513e00" #ubuntu-full-0
+  ami = "ami-0538c589dcf4584c7" #ubuntu-full-0
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
