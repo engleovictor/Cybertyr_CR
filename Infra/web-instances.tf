@@ -3,7 +3,7 @@ resource "aws_instance" "maq-webpage" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
-  key_name = "main-key"
+  key_name = "int-key"
 
   network_interface {
       device_index = 0
@@ -29,7 +29,7 @@ resource "aws_instance" "maq-db" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
 
-  key_name = "main-key"
+  key_name = "int-key"
 
   network_interface {
       device_index = 0

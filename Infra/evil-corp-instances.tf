@@ -10,7 +10,7 @@ resource "aws_instance" "maq-bot0" {
       network_interface_id = aws_network_interface.bots-ni0.id
   }
 
-  tags = {
+  tags = {  
     Name = "evil-corp-cost-0"
   }
 
@@ -109,7 +109,7 @@ resource "aws_instance" "maq-usr" {
 
   user_data = <<-EOF
               #!/bin/bash
-              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
+
               EOF
 
 }
@@ -132,7 +132,7 @@ resource "aws_instance" "maq-int" {
 
     user_data = <<-EOF
               #!/bin/bash
-              mkdir /home/ubuntu/virus_deadbeaf1337_n3v3r_f19n
+
               EOF
 
 }
